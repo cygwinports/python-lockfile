@@ -1,7 +1,7 @@
-inherit python-distutils
+inherit python-wheel
 
 NAME="python-lockfile"
-VERSION=0.9.1
+VERSION=0.12.2
 RELEASE=1
 CATEGORY="Python"
 SUMMARY="Python file locking module"
@@ -10,4 +10,7 @@ simple API for locking files. Unlike the Windows msvcrt.locking function, the
 fcntl.lockf and flock functions, and the deprecated posixfile module, the API
 is identical across both Unix and Windows platforms. The lock mechanism relies
 on the atomic nature of the respective system calls."
-HOMEPAGE="http://code.google.com/p/pylockfile/"
+
+ARCH=noarch
+
+DIFF_EXCLUDES="AUTHORS ChangeLog"
